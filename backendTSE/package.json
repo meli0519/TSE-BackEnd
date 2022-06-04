@@ -1,0 +1,31 @@
+{
+  "name": "backendTSE",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.mjs",
+  
+  "scripts": {
+    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.mjs --exec babel-node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "mssql": "^8.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "nodemon": "^2.0.16"
+  }
+}

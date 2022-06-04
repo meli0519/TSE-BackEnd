@@ -2,8 +2,8 @@ import {getconnection} from '../DataBase/connection.mjs'
 
 export const checkLogin = async (req, res) => {
     console.log("entro al loguear")
-    const { user } = req.params;
-    const { password } = req.params;
+   const { user, password } = req.body;
+   
 
     try {
         console.log(password);

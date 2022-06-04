@@ -4,6 +4,6 @@ import { checkLogin } from '../Controllers/loginController.mjs';
 
 const router = Router();
 
-router.get('/:user/:password/', checkLogin)
+router.post('/check', checkLogin)
 
 export default router;

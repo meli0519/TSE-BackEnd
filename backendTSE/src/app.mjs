@@ -4,7 +4,7 @@ import loginRoutes from './routes/loginRoute.mjs'
 
 
 const app = express() 
-
+app.use(express.static('./public'));
 //settings
 app.set('port', "3000")
 

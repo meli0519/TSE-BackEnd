@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
-import loginRoutes from './routes/loginRoute.mjs'
+import loginRoutes from './Routes/loginRoute.mjs'
+import usuarioRoutes from './Routes/usuarioRoute.mjs'
 
 
 const app = express() 
@@ -16,5 +17,5 @@ app.use(express.urlencoded({ extended: true }));
 
 //Routes
 app.use('/login', loginRoutes);
-
+app.use('/usuario', usuarioRoutes);
 export default app

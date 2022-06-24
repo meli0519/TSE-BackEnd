@@ -6,7 +6,7 @@ export const getUsuarios = async (req, res) => {
         const pool = await getconnection();
         const result = await pool.request().query('exec [dbo].[getAllUsuarios]')
         res.json(result.recordset)
-        console.log(res);
+
         pool.close();
     } catch (error) {
         res.status(500);
@@ -21,6 +21,7 @@ export const addUsuario = async  (req, res) => {
         id_departamento, correo, celular, id_distrito,
         pasword, foto
     } = req.body;
+    
     console.log(req.body)
 
     try {
@@ -38,7 +39,7 @@ export const addUsuario = async  (req, res) => {
 }; 
 
  export const deleteUsuario = async (req, res) => {
-    
+    console.log("HOLA")
     const {id} = req.params;
     try {
         const pool = await getconnection();

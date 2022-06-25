@@ -22,6 +22,7 @@ export const checkLogin = async (req, res) => {
     } catch (error) {
         console.log(error);
         console.log(result.recordset[0]);
+        console.log(result.recordset[0]);
        // res.send(result.recordset[0]);
     }
 };

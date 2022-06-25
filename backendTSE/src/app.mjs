@@ -3,6 +3,7 @@ import cors from 'cors'
 import loginRoutes from './Routes/loginRoute.mjs'
 import usuarioRoutes from './Routes/usuarioRoute.mjs'
 import departmentRoutes from './Routes/departmentRoute.mjs'
+import requestRoute from './Routes/requestRoute.mjs'
 
 const app = express() 
 
@@ -19,4 +20,5 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/login', loginRoutes);
 app.use('/usuario', usuarioRoutes);
 app.use('/department',departmentRoutes);
+app.use('/request',requestRoute)
 export default app

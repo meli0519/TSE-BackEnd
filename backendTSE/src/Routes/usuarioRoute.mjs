@@ -1,10 +1,12 @@
 import { Router } from "express";
 import { getUsuarios, addUsuario, deleteUsuario, 
-    getUsuarioById, updateUsuario } from "../Controllers/usuarioController.mjs"
+    getUsuarioById, updateUsuario, getDistritos } from "../Controllers/usuarioController.mjs"
 
 const router = Router();
 
 router.get('/get', getUsuarios)
+
+router.get('/getDistritos', getDistritos)
 
 router.post('/add', addUsuario)
 

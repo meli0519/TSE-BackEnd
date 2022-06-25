@@ -15,6 +15,22 @@ export const getUsuarios = async (req, res) => {
 
 };
 
+
+export const getDistritos = async (req, res) => {
+    
+    try {
+        const pool = await getconnection();
+        const result = await pool.request().query('exec [dbo].[sp_getAllDistritos]')
+        res.json(result.recordset)
+
+        pool.close();
+    } catch (error) {
+        res.status(500);
+        res.send(error.message); 
+    }
+
+};
+
 export const addUsuario = async  (req, res) => {
     console.log("entro");
     const {nombre, apellidos, id_sexo, cedula,fechaNacimiento,  

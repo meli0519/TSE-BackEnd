@@ -4,6 +4,7 @@ import loginRoutes from './Routes/loginRoute.mjs'
 import usuarioRoutes from './Routes/usuarioRoute.mjs'
 import departmentRoutes from './Routes/departmentRoute.mjs'
 import requestRoute from './Routes/requestRoute.mjs'
+import responseRoute from './Routes/responseRoute.mjs'
 
 const app = express() 
 
@@ -21,4 +22,5 @@ app.use('/login', loginRoutes);
 app.use('/usuario', usuarioRoutes);
 app.use('/department',departmentRoutes);
 app.use('/request',requestRoute);
+app.use('/response',responseRoute);
 export default app

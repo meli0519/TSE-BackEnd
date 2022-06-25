@@ -20,5 +20,5 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/login', loginRoutes);
 app.use('/usuario', usuarioRoutes);
 app.use('/department',departmentRoutes);
-app.use('/request',requestRoute)
+app.use('/request',requestRoute);
 export default app

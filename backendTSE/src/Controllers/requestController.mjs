@@ -25,9 +25,8 @@ export const addArchivos = async  (req, res) => {
 
     try {
         const pool = await getconnection();
--
-        await pool.request().query("exec [dbo].[sp_addArchivos] '" + linea+ "','" + archivo+"','"+
-       comentario +"','"+id_usuario+"','"+ fecha_hora+"'");
+        await pool.request().query("exec [dbo].[sp_addArchivos] '" + linea+ "','" + archivo + "','"+
+        comentario +"','"+ id_usuario+"','"+ fecha_hora+"'");
          res.sendStatus(204);
          pool.close();
     } catch (error) {
@@ -65,4 +64,6 @@ export const getSolicitudes = async (req, res) => {
     }
 
 };
+
+
 

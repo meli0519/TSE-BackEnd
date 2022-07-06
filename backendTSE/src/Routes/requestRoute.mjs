@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { addRequest, addArchivos, getClasificador,
-    getSolicitudes } from '../Controllers/requestController.mjs'
+    getSolicitudes} from '../Controllers/requestController.mjs'
 
 const router = Router();
 
